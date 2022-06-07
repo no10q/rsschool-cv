@@ -1,6 +1,6 @@
 # **Artem Sergeevich**
 ## **_My contact information_**
-### **Phone**: +375 29 580 90 36
+### **Phone**: +375 29 570 90 36
 ### **Email**: nikelodeon85@gmail.com
 ### **Telegram**: [no_10q](https://web.telegram.org/z/#1065237817)
 ### **GitHub**: [no10q](https://github.com/no10q)
@@ -13,7 +13,7 @@
 *   JavaScript
 *   Git
 ## **_Code Example_**
-```javascript
+```
 const encrypt = (str) => {
   let result = '';
   for (let i = 0; i < str.length; i += 2) {
