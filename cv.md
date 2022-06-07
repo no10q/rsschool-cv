@@ -13,15 +13,17 @@
 *   JavaScript
 *   Git
 ## **_Code Example_**
-    const encrypt = (str) => {
-      let result = '';
-      for (let i = 0; i < str.length; i += 2) {
-        const nextSymbol = str[i + 1] || '';
-        result = ${result}${nextSymbol}${str[i]};
-      }
+```js
+const encrypt = (str) => {
+  let result = '';
+  for (let i = 0; i < str.length; i += 2) {
+    const nextSymbol = str[i + 1] || '';
+    result = `${result}${nextSymbol}${str[i]}`;
+  }
 
-      return result;
-    };
+  return result;
+};
+```
 ## **_Courses_**
 *   HTML basic at code-basics.com (completed)
 *   CSS basic at code-basics.com (completed)
