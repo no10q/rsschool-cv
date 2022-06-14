@@ -13,6 +13,7 @@
     
     <header class = "header">
         <div class = "container headercontainer">
+            <div class="header-logo"></div>
         <nav class="nav">
             <ul class="nav-list">
               <li class="nav-item"><a href="#mycontactinformation" class="nav-link">My contact information</a></li>
@@ -20,6 +21,7 @@
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="#codeexample" class="nav-link">Code Example</a></li>
               <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+              <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
               <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
             </ul>
         </nav>
@@ -28,7 +30,7 @@
     
     <main class = "main">
         <div class = "container maincontainer">
-        <section class="section">
+        <section class="section section-avatar">
             <h1 class="section-title">Artem Sergeevich</h1>
             <img src="./assets/img/image.jpg " alt="myphoto" class="section-profile-logo">
         </section>
@@ -67,8 +69,7 @@
     for (let i = 0; i <span>&lt;</span> str.length; i += 2) {
         const nextSymbol = str[i + 1] || '';
         result = `${result}${nextSymbol}${str[i]}`;
-    }
-                      
+    }                  
     return result;
     };</code>
             </pre>    
@@ -82,9 +83,14 @@
                 <li class="section-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
               </ul>
         </section>
+        <section class="section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <p>My first training FE project is <a href="https://github.com/no10q/rsschool-cv" id="project-item">Curriculum Vitae.</a>
+            </p>    
+        </section>
         <section class="section" id="english">
             <h2 class="section-title">English</h2>
-            <p>A2-B1</p>    
+            <p>A2 - B1</p>    
         </section>
         </div>
     </main>

@@ -11,18 +11,17 @@
     justify-content: space-between;
     min-height: 100vh; 
     font-family: 'Roboto', sans-serif; 
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     color: #4d2323;
+    margin: 0;
+    background-color: azure;
   }
   .header {
-      background-color: #829985;
-      padding: 20px;  
-   
+      background-color: #829985;   
   }
   .main {
-    background-color: azure;
     padding: 20px; 
   }
   .footer {
@@ -51,14 +50,26 @@
   .maincontainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   .section {
-    width: 50%;
+    width: calc(50% - 20px);
+    padding: 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .section {
       width: 100%;
+    }
+    .body {
+      width: auto;
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav {
+      display: none;
     }
   }
   .section-title {
@@ -100,7 +111,7 @@
     filter: grayscale(0.2) brightness(1.05);
     transition: .3s;
   }
-  
+
   .section-profile-logo:hover {
     filter: none;
   }
@@ -183,6 +194,12 @@
   .contacts-item:nth-child(5):before {
     background-image: url("assets/svg/discordico.png");
   }
+  .headercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
   .footercontainer {
     display: flex;
     justify-content: space-between;
@@ -190,4 +207,20 @@
     margin: 0 auto;
     color: #fff;
   }
-  
+  .section-avatar {
+    text-align: center
+    }
+  #project-item {
+      text-decoration: none;
+      color: #829985;
+      transition: color 0.5s;
+  }
+  .header-logo {
+    width: 80px;
+    height: 55px;
+    background-image: url(./assets/svg/fireico.png);
+    background-color: #829985;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
