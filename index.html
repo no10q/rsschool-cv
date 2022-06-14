@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="assets/svg/favicon.ico.png">
+    <title>Artem Sergeevich - Junior Front-End Developer</title>
 </head>
 <body>
+    
+    <header class = "header">
+        <div class = "container headercontainer">
+        <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#mycontactinformation" class="nav-link">My contact information</a></li>
+              <li class="nav-item"><a href="#aboutmyself" class="nav-link">About myself</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#codeexample" class="nav-link">Code Example</a></li>
+              <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+              <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+
+    
+    <main class = "main">
+        <div class = "container maincontainer">
+        <section class="section" id="my name">
+            <h1 class="section-title">Artem Sergeevich</h1>
+            <img src="./assets/img/image.jpg " alt="my photo" class="section-profile-logo">
+        </section>
+        <section class="section" id="mycontactinformation">
+            <h2 class="section-title">My contact information</h2>
+            <ul class="section-list">
+                <li class="section-item contacts-item">
+                    Phone: +375 29 570 90 36</li>
+                <li class="section-item contacts-item">
+                    Email: <a href="mailto:nikedelon85@gmail.com" title="email">nikelodeon85@gmail.com</a></li>
+                <li class="section-item contacts-item">
+                    Telegram: <a href="https://web.telegram.org/z/#1065237817" title="telegram">no_10q</a></li>
+                <li class="section-item contacts-item">
+                    GitHub: <a href="https://github.com/no10q" title="github">no10q</a></li>
+                <li class="section-item contacts-item">
+                    Discord: <a href="https://discord.gg/VaK9jHvH" title="discord">Naft#3537</a></li>
+              </ul>
+        </section>
+        <section class="section" id="aboutmyself">
+            <h2 class="section-title">About myself</h2>
+            <p>I was a top manager of one of the largest Belarusian building company. About half a year ago, I decided to change my job and achieve success in IT, cause I think its a most perspective industry. Fast learner, motivated and interested in what I do.</p>    
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-list">
+                <li class="section-item">HTML</li>
+                <li class="section-item">CSS</li>
+                <li class="section-item">JavaScript</li>
+                <li class="section-item">Git</li>
+              </ul>
+        </section>
+        <section class="section" id="codeexample">
+            <h2 class="section-title">Code Example</h2>
+            <pre class="pre"><code>const encrypt = (str) => {
+    let result = '';
+    for (let i = 0; i < str.length; i += 2) {
+        const nextSymbol = str[i + 1] || '';
+        result = `${result}${nextSymbol}${str[i]}`;
+    }
+                      
+    return result;
+    };</code>
+            </pre>    
+        </section>
+        <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <ul class="section-list">
+                <li class="section-item">HTML basic at code-basics.com (completed)</li>
+                <li class="section-item">CSS basic at code-basics.com (completed)</li>
+                <li class="section-item">JavaScript basic at code-basics.com (completed)</li>
+                <li class="section-item">RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+              </ul>
+        </section>
+        <section class="section" id="english">
+            <h2 class="section-title">English</h2>
+            <p>A2-B1</p>    
+        </section>
+        </div>
+    </main>
+      
+    <footer class = "footer">
+        <div class = "container footercontainer">
+            <div>
+                Artem Sergeevich CV © 2022
+                <a href="https://github.com/no10q" class="github nav-link" tittle="github">no10q</a></div>
+                <a href="https://rs.school/js/" class="rss" title="Rolling Scopes School"></a>
+        </div>
+    </footer>
 </body>
 </html>
