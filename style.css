@@ -16,6 +16,7 @@
     line-height: 1.5;
     color: #4d2323;
     margin: 0;
+    background-color: azure;
   }
   .header {
       background-color: #829985;
@@ -23,7 +24,6 @@
    
   }
   .main {
-    background-color: azure;
     padding: 20px; 
   }
   .footer {
@@ -58,9 +58,19 @@
     width: calc(50% - 20px);
     padding: 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     .section {
       width: 100%;
+    }
+    .body {
+      width: auto;
+    }
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav {
+      display: none;
     }
   }
   .section-title {
