@@ -23,15 +23,14 @@
               <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
             </ul>
         </nav>
+        </div>
     </header>  
-
-
     
     <main class = "main">
         <div class = "container maincontainer">
-        <section class="section" id="my name">
+        <section class="section">
             <h1 class="section-title">Artem Sergeevich</h1>
-            <img src="./assets/img/image.jpg " alt="my photo" class="section-profile-logo">
+            <img src="./assets/img/image.jpg " alt="myphoto" class="section-profile-logo">
         </section>
         <section class="section" id="mycontactinformation">
             <h2 class="section-title">My contact information</h2>
@@ -65,7 +64,7 @@
             <h2 class="section-title">Code Example</h2>
             <pre class="pre"><code>const encrypt = (str) => {
     let result = '';
-    for (let i = 0; i < str.length; i += 2) {
+    for (let i = 0; i <span>&lt;</span> str.length; i += 2) {
         const nextSymbol = str[i + 1] || '';
         result = `${result}${nextSymbol}${str[i]}`;
     }
@@ -94,7 +93,7 @@
         <div class = "container footercontainer">
             <div>
                 Artem Sergeevich CV © 2022
-                <a href="https://github.com/no10q" class="github nav-link" tittle="github">no10q</a></div>
+                <a href="https://github.com/no10q" class="github nav-link">github.com/no10q</a></div>
                 <a href="https://rs.school/js/" class="rss" title="Rolling Scopes School"></a>
         </div>
     </footer>
