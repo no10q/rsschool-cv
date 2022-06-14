@@ -15,6 +15,7 @@
     font-size: 18px;
     line-height: 1.5;
     color: #4d2323;
+    margin: 0;
   }
   .header {
       background-color: #829985;
@@ -54,7 +55,8 @@
   }
   
   .section {
-    width: 50%;
+    width: calc(50% - 20px);
+    padding: 10px;
   }
   @media (max-width: 768px) {
     .section {
@@ -100,7 +102,7 @@
     filter: grayscale(0.2) brightness(1.05);
     transition: .3s;
   }
-  
+
   .section-profile-logo:hover {
     filter: none;
   }
@@ -190,4 +192,8 @@
     margin: 0 auto;
     color: #fff;
   }
+  .section-avatar {
+    text-align: center
+    }
+  
   
